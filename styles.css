@@ -328,8 +328,15 @@ button:focus-visible {
   height: 455px;
   justify-self: end;
   overflow: hidden;
-  background: var(--forest);
-  isolation: isolate;
+  background: white;
+}
+
+.hero-portrait {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .hero-art::before {
@@ -1015,6 +1022,22 @@ button:focus-visible {
 
 .button-light:hover {
   background: var(--paper);
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button-outline-light {
+  border-color: rgba(248, 246, 240, 0.65);
+  color: var(--paper);
+}
+
+.button-outline-light:hover {
+  background: var(--paper);
+  color: var(--forest-dark);
 }
 
 .contact-note {
