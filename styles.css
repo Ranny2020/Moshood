@@ -1369,12 +1369,6 @@ button:focus-visible,
   color: var(--paper);
 }
 
-.gallery-slide-count {
-  color: var(--ink-soft);
-  font-size: 11px;
-  font-variant-numeric: tabular-nums;
-}
-
 .gallery-more {
   display: flex;
   justify-content: center;

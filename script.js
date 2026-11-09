@@ -6,7 +6,6 @@ const projectGrid = document.querySelector("#project-grid");
 const galleryGrid = document.querySelector("#gallery-grid");
 const slideImage = document.querySelector("#gallery-slide-image");
 const slideCaption = document.querySelector("#gallery-slide-caption");
-const slideCount = document.querySelector("#gallery-slide-count");
 const projectCategories = {
   website: "Website",
   webinar: "Webinar",
@@ -187,7 +186,7 @@ function renderGallery() {
       .join("");
   }
 
-  if (!slideImage || !slideCaption || !slideCount) return;
+  if (!slideImage || !slideCaption) return;
 
   let activePhoto = 0;
   const showPhoto = (index) => {
@@ -195,8 +194,7 @@ function renderGallery() {
     slideImage.src = encodeURIComponent(fieldPhotos[activePhoto]);
     slideImage.classList.toggle("is-portrait", activePhoto === 3);
     slideImage.alt = `Moshood Isah during field work, photo ${activePhoto + 1}`;
-    slideCaption.textContent = `Field work, photo ${activePhoto + 1}`;
-    slideCount.textContent = `${String(activePhoto + 1).padStart(2, "0")} / ${String(fieldPhotos.length).padStart(2, "0")}`;
+
   };
   const previousButton = document.querySelector("[data-gallery-prev]");
   const nextButton = document.querySelector("[data-gallery-next]");
