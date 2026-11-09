@@ -42,6 +42,8 @@
         <a href="#about">About</a>
         <a href="#expertise">Expertise</a>
         <a href="#work">Works</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#articles">Writing</a>
         <a href="#education">Education</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact" class="nav-cta"
@@ -226,6 +228,15 @@
               reviews and creative partners.
             </p>
           </article>
+          <article class="expertise-card">
+            <span class="card-number">07</span>
+            <span class="card-icon" aria-hidden="true">◎</span>
+            <h3>Social media management</h3>
+            <p>
+              Plan and manage platform-ready content that builds community,
+              carries the message and supports campaign goals.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -287,12 +298,75 @@
         <div class="section-heading work-heading">
           <div>
             <div class="section-kicker">
-              <span>04</span> Articles &amp; publications
+              <span>04</span> Selected projects
             </div>
-            <h2 id="work-title">Stories made to <em>travel.</em></h2>
+            <h2 id="work-title">Good work, <em>well told.</em></h2>
+            <p>
+              A selection of websites, webinars, campaigns, reports and media
+              work.
+            </p>
           </div>
         </div>
-        <details class="article-collection" id="articles">
+        <div class="project-grid" id="project-grid" aria-live="polite">
+          <p class="content-empty">
+            Project samples will appear here as they are added.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="gallery-section section-shell"
+        id="gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker"><span>05</span> Out in the field</div>
+            <h2 id="gallery-title">People, place &amp; <em>purpose.</em></h2>
+          </div>
+          <p>
+            Fieldwork moments from community engagement, public health and
+            communications in action.
+          </p>
+        </div>
+        <div class="gallery-slideshow" aria-label="Field work photo slideshow">
+          <figure class="gallery-slide">
+            <img id="gallery-slide-image" src="mosh%201.jpeg" alt="" />
+            <figcaption id="gallery-slide-caption" aria-live="polite"></figcaption>
+          </figure>
+          <div class="gallery-controls">
+            <div class="gallery-slide-buttons">
+              <button type="button" data-gallery-prev aria-label="Previous photo">
+                <span aria-hidden="true">←</span>
+              </button>
+              <button type="button" data-gallery-next aria-label="Next photo">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <span class="gallery-slide-count" id="gallery-slide-count" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="gallery-more">
+          <a class="button button-dark" href="gallery.html">
+            See more <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section
+        class="work-section article-archive section-shell"
+        id="articles"
+        aria-labelledby="articles-title"
+      >
+        <div class="section-heading work-heading">
+          <div>
+            <div class="section-kicker">
+              <span>07</span> Articles &amp; publications
+            </div>
+            <h2 id="articles-title">Stories made to <em>travel.</em></h2>
+          </div>
+        </div>
+        <details class="article-collection">
           <summary>
             <img
               class="article-category-image"
@@ -741,17 +815,6 @@
             </li>
             <li>
               <a
-                href="https://ehealthafrica.squarespace.com/blog/community-health-workers-patients-get-boost-in-battle-against-non-communicable-diseases"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Community Health Workers, Patients Get Boost in Battle Against
-                Non-Communicable Diseases
-                <span aria-hidden="true">↗</span>
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://ehealthafrica.org/author/6ade1a11c7d8006e/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -847,7 +910,7 @@
         aria-label="Additional profile information"
       >
         <div class="profile-block">
-          <div class="section-kicker"><span>05</span> A little more</div>
+          <div class="section-kicker"><span>08</span> A little more</div>
           <h2>
             Thoughtful from the<br />first draft to the <em>final detail.</em>
           </h2>
@@ -922,7 +985,7 @@
       >
         <div class="contact-inner section-shell">
           <div class="section-kicker section-kicker-light">
-            <span>06</span> Have a good story to tell?
+            <span>08</span> Have a good story to tell?
           </div>
           <h2 id="contact-title">Let’s make it<br /><em>matter.</em></h2>
           <p>
@@ -937,10 +1000,13 @@
               rel="noopener noreferrer"
               >Connect on LinkedIn <span aria-hidden="true">↗</span></a
             >
+            <a class="button button-outline-light" href="mailto:Moshoodpm@gmail.com"
+              >Email me <span aria-hidden="true">↗</span></a
+            >
             <a
               class="button button-outline-light"
-              href="#articles"
-              >Articles I’ve written <span aria-hidden="true">↗</span></a
+              href="mailto:Moshoodpm@gmail.com?subject=Offer%20or%20collaboration%20opportunity"
+              >Send me an offer <span aria-hidden="true">↗</span></a
             >
           </div>
           <span class="contact-flower" aria-hidden="true">✳</span>
